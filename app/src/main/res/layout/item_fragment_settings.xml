@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context="com.example.bo.nixon.base.BaseMvpActivity"
+    >
+    <TextView
+        android:id="@+id/settings_frag_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="10dp"
+        android:lines="1"
+        android:textColor="@color/main_text_color"
+        android:textSize="25sp"
+        />
+
+    <com.example.bo.nixon.ui.view.SmartSwitchView
+        android:id="@+id/settings_frag_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:contentDescription="aaaa"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/switch_btn"
+        android:visibility="gone"
+        />
+</LinearLayout>

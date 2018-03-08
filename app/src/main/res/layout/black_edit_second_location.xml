@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_text_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:lines="4"
+        android:text="@string/edit_second_location"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:typeface="monospace"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edit_second_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:maxLength="30"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white_dialog_line"
+            android:hint="@string/edit_home_hint"
+            android:textColorHint="@color/sup_text_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/seek_bar_color"
+            android:gravity="center_horizontal"
+            >
+
+        </View>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/edit_second_location_abbre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:digits="@string/filter_time_zone_abbre"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:maxLength="3"
+            android:textColor="@color/white_dialog_line"
+            android:hint="@string/edit_home_hint_abbre"
+            android:textColorHint="@color/sup_text_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/seek_bar_color"
+            android:gravity="center_horizontal"
+            >
+
+        </View>
+
+    </LinearLayout>
+</LinearLayout>

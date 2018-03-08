@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_text_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    >
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/name_your_watch"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:id="@+id/edit_watch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white_dialog_line"
+            android:hint="@string/edit_name_hint"
+            android:maxLength="10"
+            android:textColorHint="@color/sup_text_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/seek_bar_color"
+            android:gravity="center_horizontal"
+            >
+
+        </View>
+
+    </LinearLayout>
+</LinearLayout>

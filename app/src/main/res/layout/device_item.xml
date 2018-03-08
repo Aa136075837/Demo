@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/item_message_layout"
+             android:layout_width="match_parent"
+             android:layout_height="60.0dp"
+             android:background="@color/black"
+             android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/item_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16.0dp"
+            android:text="adeefe"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/item_message_mac"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="16.0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/sup_text_color"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <com.example.bo.nixon.ui.view.WaftView
+        android:id="@+id/item_message_img"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="16.0dp"
+        app:smart_waft_color_has="@color/white"
+        app:smart_waft_color_no="@color/sup_text_color"
+        />
+
+</FrameLayout>

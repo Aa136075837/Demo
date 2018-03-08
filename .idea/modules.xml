@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Nixon.iml" filepath="$PROJECT_DIR$/Nixon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alarmcomponent/alarmcomponent.iml" filepath="$PROJECT_DIR$/alarmcomponent/alarmcomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/attributescomponent/attributescomponent.iml" filepath="$PROJECT_DIR$/attributescomponent/attributescomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameraComponent/cameraComponent.iml" filepath="$PROJECT_DIR$/cameraComponent/cameraComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectComponent/connectComponent.iml" filepath="$PROJECT_DIR$/connectComponent/connectComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataComponent/dataComponent.iml" filepath="$PROJECT_DIR$/dataComponent/dataComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edittextlibrary/edittextlibrary.iml" filepath="$PROJECT_DIR$/edittextlibrary/edittextlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/musicComponent/musiccomponent.iml" filepath="$PROJECT_DIR$/musicComponent/musiccomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notifyComponent/notifyComponent.iml" filepath="$PROJECT_DIR$/notifyComponent/notifyComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/otacomponent/otacomponent.iml" filepath="$PROJECT_DIR$/otacomponent/otacomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartBlutTooth/smartBlutTooth.iml" filepath="$PROJECT_DIR$/smartBlutTooth/smartBlutTooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartcustomview/smartcustomview.iml" filepath="$PROJECT_DIR$/smartcustomview/smartcustomview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timeComponent/timeComponent.iml" filepath="$PROJECT_DIR$/timeComponent/timeComponent.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.bo.nixon">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 加载不同分辨率下的资源文件 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"/>
+
+    <!-- 读取log日志权限 -->
+    <!-- <uses-permission android:name="android.permission.READ_LOGS" /> -->
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" /> -->
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 监听短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!-- 设置时区 -->
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <!-- 截图 -->
+    <!-- <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/> -->
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 锁屏幕 -->
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" /> -->
+    <!-- 必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- 获取MAC地址 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 读写sdcard，storage等等 -->
+    <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 获取logcat日志 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--
+              监听时间的更改
+    <action android:name="android.intent.action.DATE_CHANGED" />
+    <action android:name="android.intent.action.TIME_SET" />
+    <action android:name="android.intent.action.TIME_TICK" />
+    -->
+
+
+    <!-- 设置时区 -->
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/> <!-- 允许程序录制音频 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/> <!-- 获取logcat日志 -->
+
+
+    <!-- <uses-feature android:name="android.hardware.nfc" /> -->
+    <!-- 除了蓝牙权限外，如果需要BLE feature则还需要声明uses-feature -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true"/>
+
+    <application
+        android:name=".base.NixonApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/nixon_ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- #######################Activity Start########################### -->
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <!--adjustResize-->
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <!-- 程序入口 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.SignInActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.connect.ConnectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.camera.CameraActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.LoginAndRegActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.EditUserInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ConnectWatchHomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.CalibrationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.IntroductionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.connect.ConnectingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.HelpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.ChooseCity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ui.activity.NixonUrlActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+        <!-- #######################Activity End########################### -->
+
+
+        <!-- #######################Service Start########################### -->
+        <service
+            android:name="com.smart.smartble.smartBle.BleService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="com.smart.smartble.smartBle.BleService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.NotifyService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <!-- #######################Service End########################### -->
+
+
+        <!-- #######################Receiver Start########################### -->
+        <!-- <receiver android:name=".service.NotifyService$TimeZoneReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.TIMEZONE_CHANGED"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- #######################Receiver End########################### -->
+
+
+        <!-- #######################第三方 start########################### -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="1773660426258869"/>
+        <!-- 蒲公英 APP ID  开发版 ：86b5179d78c31531b5e55bd7c81b1060   预发布版 ： -->
+        7
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="86b5179d78c31531b5e55bd7c81b1060">
+        </meta-data>
+        <!-- 蒲公英 Android 7.0 以上 配置 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.bo.nixon.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- #######################第三方 End########################### -->
+    </application>
+
+</manifest>

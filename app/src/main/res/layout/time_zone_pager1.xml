@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            >
+
+            <com.example.bo.nixon.ui.view.SmartTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/time_zone_title_1"
+                android:textColor="@color/sup_text_color"
+                android:textSize="18sp"
+                />
+
+            <com.example.bo.nixon.ui.view.SmartTextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/home_location"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/time_zone_home_loca"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:maxLength="30"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/home_location_hint"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sup_text_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/sup_text_color"/>
+
+            <EditText
+                android:id="@+id/time_zone_home_abbre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:digits="@string/filter_time_zone_abbre"
+                android:gravity="center"
+                android:hint="@string/home_location_abbre_hint"
+                android:lines="1"
+                android:maxLength="3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sup_text_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/sup_text_color"/>
+
+            <com.example.bo.nixon.ui.view.SmartTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/second_location"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/time_zone_second_loca"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:maxLength="30"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/home_location_hint"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sup_text_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/sup_text_color"/>
+
+            <EditText
+                android:id="@+id/time_zone_second_abbre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@null"
+                android:digits="@string/filter_time_zone_abbre"
+                android:gravity="center"
+                android:hint="@string/home_location_abbre_hint"
+                android:lines="1"
+                android:maxLength="3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/sup_text_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/sup_text_color"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.bo.nixon.ui.view.SmartTextView
+            android:id="@+id/time_zone_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="@string/contact_btn_confirm"
+            android:textColor="@color/sup_color"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</RelativeLayout>

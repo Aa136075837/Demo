@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SmartCustomView</string>
+
+    <!-- 闹钟 -->
+    <string name="alarm_item_title_1">Never</string>
+    <string name="alarm_item_tip">never</string>
+    <string name="alarm_item_title_2">Working day</string>
+    <string name="alarm_item_title_3">Weekend</string>
+    <string name="alarm_item_title_4">Every day</string>
+    <string name="alarm_item_subtitle_1">Monday</string>
+    <string name="alarm_item_subtitle_2">Tuesday</string>
+    <string name="alarm_item_subtitle_3">Wednesday</string>
+    <string name="alarm_item_subtitle_4">Thursday</string>
+    <string name="alarm_item_subtitle_5">Friday</string>
+    <string name="alarm_item_subtitle_6">Saturday</string>
+    <string name="alarm_item_subtitle_7">Sunday</string>
+    <string name="alarm_error">Max add 5 alarm</string>
+    <string name="event_title">alarm</string>
+
+    <string name="AM">am</string>
+    <string name="PM">pm</string>
+
+    <string name="time_set_hour_simple">h</string>
+    <string name="time_set_min_simple">m</string>
+    <string name="time_set_sec_simple">s</string>
+    <string name="day_hour">h</string>
+    <string name="day_min">min</string>
+    <string name="day_sec">s</string>
+
+</resources>

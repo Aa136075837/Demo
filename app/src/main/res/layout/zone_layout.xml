@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.example.smartcustomview.views.AutoFitTextView
+        android:id="@+id/zone_tv"
+        android:text="pdx"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <com.example.bo.nixon.ui.view.SmartClockView
+        android:id="@+id/zone_img"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

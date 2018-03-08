@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.ChooseCity"
+    >
+    <com.example.bo.nixon.ui.view.SmartToolbar
+        android:id="@+id/choose_city_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+    </com.example.bo.nixon.ui.view.SmartToolbar>
+    <!--<EditText-->
+        <!--android:id="@+id/choose_city_seach"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/seach_bg"-->
+        <!--android:drawableLeft="@drawable/icon_search"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:hint="@string/seacrh_hint"-->
+        <!--android:imeOptions="actionSearch"-->
+        <!--android:padding="10dp"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/zone_abbre"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.5"
+            android:gravity="right"
+            android:text="@string/choose_zone_abbre"
+            android:lines="1"
+            android:textColor="@color/sup_text_color"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/city_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="@string/choose_zone_title"
+            android:lines="1"
+            android:textColor="@color/sup_text_color"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/zone_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/city_title"
+            android:textColor="@color/sup_text_color"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/zone_country"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:textColor="@color/sup_text_color"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/choose_city_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        >
+
+    </ListView>
+</LinearLayout>

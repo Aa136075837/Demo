@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarm_event_view_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/alarm_event_item_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-80dp"
+        android:background="@color/alarm_delete_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/delete"
+        android:textColor="@color/sup_color"
+        android:textSize="18sp"
+        />
+
+    <CheckBox
+        android:id="@+id/alarm_event_item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:button="@drawable/radio_button_selector"
+        android:focusable="false"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/alarm_event_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="sans-serif-light"
+                android:text="08:00"
+                android:textColor="@color/main_text_color"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/alarm_event_item_time_after"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:fontFamily="sans-serif-light"
+                android:text="am"
+                android:textColor="@color/main_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/alarm_event_item_repeat_time"
+                android:layout_width="wrap_content"
+                android:maxWidth="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="13dp"
+                android:ellipsize="start"
+                android:gravity="center|left"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:text="名称"
+                android:textColor="@color/sup_text_color"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/alarm_event_item_repeat"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:ellipsize="end"
+                android:gravity="center|left"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:text="/描述"
+                android:textColor="@color/sup_text_color"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        >
+
+        <ImageView
+            android:id="@+id/alarm_event_item_arr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_arrowenter"
+            />
+
+        <com.example.bo.nixon.ui.view.SmartSwitchView
+            android:id="@+id/alarm_event_item_open_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:contentDescription="aaaa"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/switch_btn"
+            />
+    </FrameLayout>
+</LinearLayout>

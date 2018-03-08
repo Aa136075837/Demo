@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:id="@+id/ic"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_notifly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/dialog_net_diss"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/btn_confrim"
+            android:textColor="@color/text_moren"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_notifly_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_above="@id/dialog_notifly_bottom"
+        android:background="#AAAAAA" />
+
+    <TextView
+        android:id="@+id/dialog_net_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialog_notifly_line"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:textColor="@color/text_black"
+        android:textSize="17sp" />
+
+</RelativeLayout>

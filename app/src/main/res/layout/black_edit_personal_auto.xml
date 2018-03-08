@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_text_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    android:weightSum="1"
+    >
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/personal_goal_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/auto_time_zones"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_weight="0.45"
+        />
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/auto_desc"
+        android:textColor="@color/sup_text_color"
+        />
+    <com.example.bo.nixon.ui.view.SmartSwitchView
+        android:id="@+id/act_auto_time_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/switch_btn"
+        />
+</LinearLayout>

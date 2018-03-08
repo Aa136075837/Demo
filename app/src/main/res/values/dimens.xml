@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity标题栏高度 -->
+    <dimen name="activity_title_height">50dp</dimen>
+</resources>

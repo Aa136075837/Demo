@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/alarmcomponent" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/attributescomponent" />
+            <option value="$PROJECT_DIR$/cameraComponent" />
+            <option value="$PROJECT_DIR$/connectComponent" />
+            <option value="$PROJECT_DIR$/dataComponent" />
+            <option value="$PROJECT_DIR$/edittextlibrary" />
+            <option value="$PROJECT_DIR$/musicComponent" />
+            <option value="$PROJECT_DIR$/notifyComponent" />
+            <option value="$PROJECT_DIR$/otacomponent" />
+            <option value="$PROJECT_DIR$/smartBlutTooth" />
+            <option value="$PROJECT_DIR$/smartcustomview" />
+            <option value="$PROJECT_DIR$/timeComponent" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

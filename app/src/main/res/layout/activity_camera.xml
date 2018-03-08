@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_camera"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/camera_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/camera_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_text_color">
+
+        <RelativeLayout
+            android:id="@+id/rl_picker_rel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <com.example.smartcustomview.views.PickerScrollView
+                android:id="@+id/pickerscrlllview"
+                android:layout_width="93dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="120.5dp"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="33dp"
+                android:layout_toLeftOf="@+id/pickerscrlllview"
+                android:gravity="center|right"
+                android:text="@string/camera_yanshi_time"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_small_arrow"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginRight="40.0dp"
+                android:layout_marginLeft="40.0dp"
+                android:text="@string/camera_tip"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_text_color"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/review_thumbnail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentdescription"
+                android:scaleType="center"
+                android:src="@drawable/nor_pictuer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/review_voice_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/review_voice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentdescription"
+                android:scaleType="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_camera_to_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/contentdescription"
+                android:src="@drawable/icon_camera_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_camera_delay_rel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_camera_delay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_timing_selector"
+                android:gravity="center"
+                android:textColor="@color/text_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_camera_delay_time"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_camera_delay"
+                android:gravity="center"
+                android:text="3s"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/camera_view_time"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.5"
+        android:background="@drawable/rangview"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text_camera"
+        android:textSize="130sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/camera_img"
+        android:layout_width="140.0dp"
+        android:layout_height="140.0dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/hud_focus_ring"
+        android:visibility="invisible" />
+
+</RelativeLayout>

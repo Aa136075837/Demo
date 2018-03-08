@@ -1,0 +1,3 @@
+include ':app', ':edittextlibrary', ':smartcustomview', ':smartBlutTooth', ':timeComponent', ':notifyComponent',
+    ':cameraComponent', ':alarmcomponent', ':otacomponent', ':connectComponent', ':dataComponent',
+    ':attributescomponent', ':musiccomponent'

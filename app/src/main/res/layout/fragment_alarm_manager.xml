@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/alarm_manager_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/alarm_manager_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_small_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alarm_manager_ll"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/alarm_manager_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/contact_btn_cancel"
+            android:textColor="@color/main_text_color" />
+
+        <TextView
+            android:id="@+id/alarm_manager_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/alarm_btn_confrim"
+            android:textColor="@color/sup_color" />
+    </LinearLayout>
+
+    <com.example.smartcustomview.views.SmartNoScrollViewPager
+        android:id="@+id/alarm_manager_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/alarm_manager_ll"
+        android:layout_below="@+id/alarm_manager_toolbar">
+
+    </com.example.smartcustomview.views.SmartNoScrollViewPager>
+
+</RelativeLayout>

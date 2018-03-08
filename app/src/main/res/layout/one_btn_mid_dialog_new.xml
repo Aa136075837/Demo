@@ -1,0 +1,76 @@
+<com.example.smartcustomview.views.shadow.ZDepthShadowLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ic"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:padding="50dp"
+    app:z_depth="z_depth5"
+    app:z_depth_paddingTop="z_depth5"
+    app:z_depth_shape="rect"
+    app:z_depth_animDuration="150"
+    app:z_depth_doAnim="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_shadow"
+        >
+
+        <com.example.bo.nixon.ui.view.SmartTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <com.example.bo.nixon.ui.view.SmartTextView
+            android:id="@+id/dialog_message_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dialog_btn_frame"
+            android:layout_below="@+id/dialog_title"
+            android:gravity="top|center"
+            android:padding="5dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="19sp"
+            />
+
+        <FrameLayout
+            android:id="@+id/dialog_btn_frame"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dp"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50.0dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.example.bo.nixon.ui.view.SmartTextView
+                    android:id="@+id/dialog_confirm_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/ok"
+                    android:textStyle="bold"
+                    android:textColor="@color/sup_color"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</com.example.smartcustomview.views.shadow.ZDepthShadowLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--&lt;!&ndash; SELF &ndash;&gt;-->
+    <!--<color name="text_title_color">#FFFFFF</color>-->
+    <color name="white">#FFFFFF</color>
+    <!--<color name="play_white">#FEFEFE</color>-->
+    <!--<color name="search_connect_tip">#1FAB7E</color>-->
+    <!--<color name="search_connect_tip_to_snake">#B8B8B8</color>-->
+    <!--<color name="text_default">#000000</color>-->
+    <!--<color name="text_moren">#090909</color>-->
+    <!--<color name="text_line">#090909</color>-->
+    <!--<color name="line_bg">#9d9d9d</color>-->
+    <!--<color name="text_line1">#f0f0f0</color>-->
+    <!--<color name="text_camera">#ccf0f0f0</color>-->
+    <!--<color name="text_name">#8B8B8B</color>-->
+    <!--<color name="text_yellow">#F15A25</color>-->
+    <!--<color name="text_blue">#76bee3</color>-->
+    <!--<color name="text_gray">#666666</color>-->
+    <!--<color name="text_white">#FFFFFF</color>-->
+    <!--<color name="text_read">#EF3D3F</color>-->
+    <color name="text_black">#000000</color>
+    <!--<color name="text_30_alpha_black">#4c000000</color>-->
+    <!--<color name="main_left_line_color">#4D4D4D</color>-->
+    <!--<color name="default_bg_color">#2F343E</color>-->
+    <!--<color name="line_color_1">#A6A6A6</color>-->
+    <!--<color name="bg_red">#FF4181</color>-->
+    <!--<color name="bg_blue">#03A9F4</color>-->
+    <!--<color name="bg_white">#FFFFFF</color>-->
+    <!--<color name="list_select">#2B3036</color>-->
+    <!--<color name="list_select_none">#00000000</color>-->
+    <!--<color name="san_end_color">#D3A303</color>-->
+    <!--<color name="san_start_color">#05A7D6</color>-->
+    <!--&lt;!&ndash; dialog color &ndash;&gt;-->
+    <!--<color name="dialog_bg_color">#00000000</color>-->
+    <!--<color name="dialog_default">#e16529</color>-->
+    <!--&lt;!&ndash; 透明 &ndash;&gt;-->
+    <!--<color name="sport_sleep_default">#FF99FF</color>-->
+    <!--<color name="sport_sleep_nice">#9900CC</color>-->
+    <!--<color name="sport_sleep_bad">#FF00FF</color>-->
+    <!--<color name="time_set_select">#ef3d3f</color>-->
+    <!--<color name="set_time_half_alpha">#80090909</color>-->
+    <!--<color name="set_time_33_alpha">#33090909</color>-->
+    <!--<color name="set_time_70_alpha">#B3090909</color>-->
+    <!--<color name="set_time_100_alpha">#FF090909</color>-->
+    <!--<color name="set_time_title_bg">#2F343E</color>-->
+    <!--<color name="title_text_color">#FDFDFD</color>-->
+    <!--<color name="bg_white_10">#1AFFFFFF</color>-->
+    <!--<color name="bg_white_30">#4DFFFFFF</color>-->
+    <!--<color name="bg_white_60">#9AFFFFFF</color>-->
+    <!--<color name="alpha_80_sport">#00ffffff</color>-->
+    <!--&lt;!&ndash; 运动步数控件 &ndash;&gt;-->
+    <!--<color name="sport_step_view_line_1">#0A3953</color>-->
+    <!--<color name="sport_step_view_line_2">#058ACB</color>-->
+    <!--<color name="sport_step_view_line_3">#88B743</color>-->
+    <!--<color name="sport_step_view_bg_color">#093248</color>-->
+    <!--<color name="sport_step_view_text_color">#088CCC</color>-->
+    <!--<color name="sport_text_color">#090909</color>-->
+    <!--<color name="half_sport_text_color">#80090909</color>-->
+    <!--<color name="heart_default">#E48674</color>-->
+    <!--<color name="sport_status_color">#209583</color>-->
+    <!--<color name="health_alarmClock_s">#2ea5ac</color>-->
+    <!--<color name="device_list_item_p">#30343f</color>-->
+    <!--<color name="connect_tip">#ff1f1f1f</color>-->
+    <!--<color name="main_color">#ff30343f</color>-->
+    <!--<color name="titem_ip_color">#ff40444a</color>-->
+    <!--<color name="titem_ip_second_color">#ff696969</color>-->
+    <!--<color name="set_time_show_color">#ff838383</color>-->
+    <!--<color name="set_time_tip_color">#ff090909</color>-->
+    <!--<color name="set_time">#ffcccccc</color>-->
+    <!--<color name="uv_time">#828282</color>-->
+    <!--<color name="uv_status_color">#E95269</color>-->
+    <!--<color name="notify_status_color">#F59328</color>-->
+    <!--<color name="camera_status_color">#247BBD</color>-->
+
+    <!--&lt;!&ndash; new version &ndash;&gt;-->
+    <!--<color name="tip_color">#ffc4c4c4</color>-->
+    <!--<color name="play_50_color">#805BBCF4</color>-->
+    <!--<color name="play_30_color">#605BBCF4</color>-->
+    <!--<color name="play_bg_color">#ebf7fe</color>-->
+    <!--<color name="play_bg_50_color">#80ebf7fe</color>-->
+    <!--<color name="play_ana_bg_color">#ecf6ff</color>-->
+    <!--<color name="play_100_color">#ff5BBCF4</color>-->
+    <!--<color name="day_50_white">#80FFFFFF</color>-->
+    <!--<color name="day_0_white">#00ffffff</color>-->
+    <!--<color name="play_text_color">#747474</color>-->
+    <!--<color name="play_text_color1">#757575</color>-->
+    <!--<color name="play_leep_1">#DBE71F</color>-->
+    <!--<color name="play_leep_2">#5EE4d6</color>-->
+    <!--<color name="play_leep_3">#28cdbd</color>-->
+    <!--<color name="play_sleep_click_sleep">#ecf196</color>-->
+    <!--<color name="play_ana_text_color">#5abcf2</color>-->
+    <!--<color name="play_alarm_select">#50a6d7</color>-->
+    <!--<color name="play_ana_progress_color">#4ee3cb</color>-->
+    <!--<color name="play_ana_x_color">#cfccfe</color>-->
+    <!--<color name="play_select_color">#c6e9fb</color>-->
+    <!--<color name="mine_persion_right_show">#999999</color>-->
+    <!--<color name="mine_dialog_bg_color">#f4f5f5</color>-->
+    <!--<color name="avatar_select_color">#5e5e5e</color>-->
+
+    <!--&lt;!&ndash; 分析 &ndash;&gt;-->
+    <!--<color name="analysis_date_color">#5bbcf4</color>-->
+    <!--<color name="analysis_date_colors">#74C8F5</color>-->
+    <!--<color name="analysis_dline_color">#cfecfc</color>-->
+    <!--<color name="analysis_weekline_color">#ceebcf</color>-->
+    <!--<color name="analysis_weektext_color">#c4ced6</color>-->
+    <!--&lt;!&ndash;智玩  &ndash;&gt;-->
+    <!--<color name="play_ana_select_color">#ebf7fe</color>-->
+    <!--<color name="play_ana_sport_bg_color">#ffb8f3e8</color>-->
+    <!--<color name="play_ana_sport_pr_color">#ff4fe2ca</color>-->
+    <!--<color name="play_ana_sleep_bg_color">#ffbde4fa</color>-->
+    <!--<color name="play_ana_sleep_pr_color">#ff5abcf2</color>-->
+    <!--<color name="play_time_not_click_color">#ffeeeeee</color>-->
+    <!--<color name="clock_time_not_click_color">#aaaaaa</color>-->
+    <!--<color name="ana_gray">#b7bdc6</color>-->
+    <!--<color name="play_change_time">#888888</color>-->
+    <!--<color name="play_time_list_divider">#E5E5E5</color>-->
+    <!--<color name="play_help">#6DB1E0</color>-->
+    <!--&lt;!&ndash;我的一天  &ndash;&gt;-->
+    <!--<color name="day_click_sleep_to_change">#60DDD3</color>-->
+    <!--<color name="day_click_sleep_long_click_change">#28cdbd</color>-->
+    <!--<color name="day_sleep_bottom_color">#FAFAFB</color>-->
+    <!--<color name="play_disconnect_white">#EEEEEE</color>-->
+    <!--<color name="play_lost_time">#ecf6fe</color>-->
+    <!--<color name="play_sleep_tree_color">#205371</color>-->
+    <!--<color name="play_no_data_color">#86acbf</color>-->
+
+    <!--<color name="play_guide_normal_color">#B3a7bf</color>-->
+    <!--<color name="play_guide_select_color">#a9c2d3</color>-->
+    <!--<color name="wechat_text_color">#333333</color>-->
+    <!--<color name="wechat_sup_text_color">#666666</color>-->
+
+    <!--<color name="login_top_bg">#ddf1fd</color>-->
+    <!--<color name="login_other_line">#dbdbdb</color>-->
+    <!--<color name="login_edit_hint_color">#b3b3b3</color>-->
+    <!--<color name="login_popu_press">#dfdfdf</color>-->
+
+    <!--<color name="blue_5bbcf4_press">#5bbcf4</color>-->
+    <!--<color name="slide_bar_color">#5fb4f8</color>-->
+    <!--<color name="toast_bg_color">#bb000000</color>-->
+
+    <!--<color name="guide_1">#1fab7e</color>-->
+    <!--<color name="guide_2">#f7a536</color>-->
+    <!--<color name="guide_3">#33a3d6</color>-->
+    <!--<color name="guide_4">#ea7182</color>-->
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="text_sport_setting_color">#1FAB7E</color>
+    <color name="text_color">#FFafafaf</color>
+    <color name="text_color_tip">#FFc4c4c4</color>
+    <color name="mine_select_color">#f49e51</color>
+    <color name="mine_line_color">#cfeafc</color>
+</resources>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_connect_author_tip_bg_white"
+    android:paddingBottom="40.0dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/smart_pop_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100.0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="28.0dp"
+        android:text="@string/connect_auhor_tip"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21.0dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="6.0dp">
+
+        <ImageView
+            android:id="@+id/smart_pop_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_watch_find" />
+    </FrameLayout>
+</LinearLayout>

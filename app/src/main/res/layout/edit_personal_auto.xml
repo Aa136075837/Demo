@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    >
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/personal_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lines="4"
+        android:text="@string/auto_time_zones"
+        android:textColor="@color/main_text_color"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/ambitious_seek_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personal_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/auto_desc"
+        android:textColor="@color/sup_text_color"
+        />
+
+    <com.example.bo.nixon.ui.view.SmartSwitchView
+        android:id="@+id/frag_goal_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ambitious_seek_text"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/switch_btn"
+        />
+</RelativeLayout>

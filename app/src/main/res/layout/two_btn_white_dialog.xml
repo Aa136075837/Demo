@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ic"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:background="@drawable/shape_play_item"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/dialog_message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="110.0dp"
+        android:gravity="center"
+        android:padding="10.0dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/black_dialog_line"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50.0dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/dialog_cancel_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_left"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/no"
+                android:textColor="@color/dialog_btn_text"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/dialog_confirm_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_dialog_right"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/yes"
+                android:textColor="@color/dialog_btn_text"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black_dialog_line"
+            />
+    </FrameLayout>
+</LinearLayout>

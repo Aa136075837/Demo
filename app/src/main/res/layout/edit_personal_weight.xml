@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    >
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/personal_weight"
+        android:textColor="@color/main_text_color"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            >
+
+            <TextView
+                android:id="@+id/frag_weight_text_reduce"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <com.example.bo.nixon.ui.view.SmartTextView
+                android:id="@+id/frag_weight_seek_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sup_text_color"
+                />
+
+            <TextView
+                android:id="@+id/frag_weight_text_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/frag_weight_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="490"
+            android:layout_marginTop="20dp"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@drawable/porfile_button_regulator_1"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

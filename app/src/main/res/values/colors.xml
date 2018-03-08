@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="slide_bar_color">#000</color>
+    <color name="main_text_color">#000</color>
+    <color name="sup_text_color">#c1c1c1</color>
+    <color name="sup_color">#d66162</color>
+    <color name="sup_color_alpha">#60d66162</color>
+    <color name="sup_color_click">#703233</color>
+    <color name="bg_color">#f9f9f9</color>
+    <color name="line_color">#f1f1f2</color>
+    <color name="seek_bar_color">#979797</color>
+    <color name="black">#000000</color>
+    <color name="home_tag_select_color">#BBBBBB</color>
+    <color name="text_moren">#090909</color>
+    <color name="text_camera">#ccf0f0f0</color>
+    <color name="side_bar_text">#c7c7c7</color>
+    <color name="login_red">#EF422c</color>
+    <color name="btn_deep_blue">#3B5999</color>
+    <color name="btn_shallow_blue">#4c7ebe</color>
+    <color name="blue_text">#7e9ffd</color>
+    <color name="black_dialog_line">#434343</color>
+    <color name="white_dialog_line">#c7c7c7</color>
+    <color name="dialog_btn_text">#0076ff</color>
+    <color name="skip_color">#4d4d4d</color>
+    <color name="switch_bg_color">#808080</color>
+    <color name="alarm_delete_bg">#ebebeb</color>
+
+    <color name="connect_author_tip_color">#ffcbb3</color>
+</resources>

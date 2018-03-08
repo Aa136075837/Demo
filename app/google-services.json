@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "752406320548",
+    "project_id": "firebase-nixon"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752406320548:android:844967c697cc2f66",
+        "android_client_info": {
+          "package_name": "com.example.bo.nixon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752406320548-lpnlt9tlgmpnlut5smgrpj85e10ea2i7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bo.nixon",
+            "certificate_hash": "8efcbd2a81e33eebb29c8dd6c1d9bdf9d83cf59a"
+          }
+        },
+        {
+          "client_id": "752406320548-t7c1hldpq2rviov579eikdrjedfq46uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZazw876A8kf1T-e8aoTOI6umztHKvNvk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

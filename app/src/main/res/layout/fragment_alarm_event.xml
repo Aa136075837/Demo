@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.LoginActivity"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/sup_text_color"
+        android:text="@string/play_alarm_action_edit_title"
+        android:textSize="18sp"
+        />
+    <EditText
+        android:id="@+id/alarm_action_edit"
+        android:layout_width="match_parent"
+        android:layout_height="250.0dp"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:layout_marginTop="10.0dp"
+        android:background="@drawable/shape_play_item"
+        android:hint="@string/play_alarm_action_hint"
+        android:gravity="start"
+        android:maxLength="200"
+        android:padding="10.0dp"
+        android:textColor="@color/main_text_color"
+        android:textColorHint="@color/text_color_tip"
+        android:textSize="15sp"
+        />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.base.BaseMvpActivity"
+    >
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/calibration_pager_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/calibration_pager_num1"
+        android:textColor="@color/sup_text_color"
+        />
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/calibration_1_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/calibration_pager_tip1"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        />
+
+    <com.example.smartcustomview.views.TimeWheelView
+        android:layout_marginTop="20dp"
+        android:id="@+id/time_select_date_view"
+        android:layout_width="match_parent"
+        android:layout_marginRight="60.0dp"
+        android:layout_marginLeft="60.0dp"
+        android:layout_height="180.0dp" />
+</LinearLayout>

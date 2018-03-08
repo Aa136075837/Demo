@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    android:orientation="vertical"
+    >
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="3"
+        android:textColor="@color/main_text_color"
+        android:text="@string/personal_tall"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/frag_tall_seek_text_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/frag_tall_seek_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="20dp"
+            android:text="+"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <com.example.bo.nixon.ui.view.SmartTextView
+            android:id="@+id/frag_tall_seek_text"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="85dp"
+            android:textColor="@color/sup_text_color"
+            />
+
+        <TextView
+            android:id="@+id/frag_tall_seek_text_reduce"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/frag_tall_seek_text"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="30sp"/>
+
+        <com.example.bo.nixon.ui.view.SmartSeekBar
+            android:id="@+id/frag_tall_smart_seekbar"
+            android:layout_width="wrap_content"
+            android:padding="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:progress="58"
+            android:layout_centerHorizontal="true"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:max="108"
+            android:thumb="@drawable/porfile_button_regulator_1"
+            >
+        </com.example.bo.nixon.ui.view.SmartSeekBar>
+
+    </RelativeLayout>
+
+</LinearLayout>

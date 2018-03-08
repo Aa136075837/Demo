@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaftView">
+        <attr format="integer" name="smart_waft_sum"></attr>
+        <attr format="integer" name="smart_waft_strength"></attr>
+        <attr format="color" name="smart_waft_color_no"></attr>
+        <attr format="color" name="smart_waft_color_has"></attr>
+    </declare-styleable>
+    <declare-styleable name="SmartSwitchView">
+        <attr name="switch_selected" format="boolean"></attr>
+    </declare-styleable>
+</resources>

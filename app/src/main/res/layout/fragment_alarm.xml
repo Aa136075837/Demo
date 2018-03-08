@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.base.BaseMvpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/alarm_list_view"
+            android:layout_width="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_height="match_parent"></ListView>
+
+        <FrameLayout
+            android:id="@+id/alarm_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/alarm_frame_add"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/icon_add"
+            android:gravity="center"
+            android:text="@string/add_alarm"
+            android:textColor="@color/sup_text_color" />
+
+        <TextView
+            android:id="@+id/alarm_frame_edit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/sup_text_color" />
+
+        <LinearLayout
+            android:id="@+id/edit_delete_ll"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/alarm_frame_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contact_btn_cancel"
+                android:textColor="@color/main_text_color" />
+
+            <TextView
+                android:id="@+id/alarm_frame_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/contact_btn_delete"
+                android:textColor="@color/sup_text_color"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

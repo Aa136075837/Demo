@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_text_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.MainActivity"
+    >
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/personal_tall"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/act_tall_seek_text_unit_big"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="140dp"
+            android:layout_marginBottom="20dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_ft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="125dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_unit_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/act_tall_seek_text_ft"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/act_tall_seek_text_unit_big"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_unit_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/act_tall_seek_text_in"
+            android:textColor="@color/white"
+            />
+
+
+        <TextView
+            android:id="@+id/act_tall_seek_text_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_tall_seek_text_unit_big"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="140dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <com.example.bo.nixon.ui.view.SmartSeekBar
+            android:id="@+id/act_tall_smart_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginTop="20dp"
+            android:max="108"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:progress="58"
+            android:progressDrawable="@drawable/seekbar_style_1"
+            android:thumb="@drawable/porfile_button_regulator_1"
+            >
+        </com.example.bo.nixon.ui.view.SmartSeekBar>
+
+    </RelativeLayout>
+
+</LinearLayout>

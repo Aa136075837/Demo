@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dp"
+    android:orientation="horizontal"
+    >
+
+    <FrameLayout
+        android:id="@+id/toolbar_left_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar_center_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/toolbar_center_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/toolbar_center_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:lines="1"
+                android:text="@string/disconnected_l"
+                android:textColor="@color/sup_color"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar_right_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

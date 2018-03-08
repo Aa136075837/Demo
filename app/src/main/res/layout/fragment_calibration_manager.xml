@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.base.BaseMvpActivity"
+    >
+    <ImageView
+        android:id="@+id/calibration_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_small_arrow"
+        />
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/calibration_manager_title"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        />
+    <com.example.smartcustomview.views.SmartNoScrollViewPager
+        android:id="@+id/calibration_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </com.example.smartcustomview.views.SmartNoScrollViewPager>
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/calibration_next"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/calibration_next_bg"
+        android:text="@string/next"
+        android:textColor="@color/main_text_color"
+        android:layout_marginBottom="20dp"
+        />
+</LinearLayout>

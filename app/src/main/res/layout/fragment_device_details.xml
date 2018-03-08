@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.bo.nixon.ui.activity.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/device_detail_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_small_arrow"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/device_details_settings"
+        android:textColor="@color/sup_text_color"
+        android:textSize="18sp"
+        />
+
+    <EditText
+        android:id="@+id/device_detail_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:layout_marginTop="20.0dp"
+        android:background="@drawable/shape_play_item"
+        android:digits="@string/filter_vcode"
+        android:hint="@string/device_details_hint"
+        android:maxLength="11"
+        android:padding="15.0dp"
+        android:textColor="@color/main_text_color"
+        android:textColorHint="@color/text_color_tip"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:layout_marginRight="8.0dp"
+        android:layout_marginTop="10.0dp"
+        android:text="@string/device_details_desc"
+        android:textColor="@color/sup_text_color"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/device_detail_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:clickable="false"
+            android:text="@string/contact_btn_confirm"
+            android:textColor="@color/sup_text_color"/>
+    </RelativeLayout>
+</LinearLayout>

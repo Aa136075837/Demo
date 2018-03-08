@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_ble_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingTop="10dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/item_ble_mac"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:paddingBottom="10dp"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <com.example.bo.nixon.ui.view.WaftView
+        android:id="@+id/item_ble_waft"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        />
+
+</LinearLayout>

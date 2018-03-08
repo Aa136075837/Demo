@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.example.bo.nixon.ui.view.SmartTextView
+        android:id="@+id/how_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/personal_goal"
+        android:textColor="@color/main_text_color"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/how_you"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/set_your_goal"
+        android:textColor="@color/sup_text_color"
+        android:textSize="16sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/how_you"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <com.example.bo.nixon.ui.view.SmartTextView
+            android:id="@+id/frag_ambitious_seek_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/sup_text_color"
+            />
+        <!--  <SeekBar
+              android:id="@+id/frag_ambitious_seekbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:maxHeight="3dp"
+              android:minHeight="3dp"
+              android:paddingLeft="30dp"
+              android:paddingRight="30dp"
+              android:max="39500"
+              android:progressDrawable="@drawable/seekbar_style"
+              android:progress="100"
+              android:thumb="@drawable/porfile_button_regulator_1"
+              />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:src="@drawable/seekbar_style_3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:layout_marginBottom="28dp"
+                android:layout_height="match_parent"/>
+
+            <com.example.smartcustomview.views.seekbar.BubbleSeekBar
+                android:id="@+id/frag_ambitious_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/transparent"
+                android:maxHeight="3dp"
+                android:minHeight="3dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
